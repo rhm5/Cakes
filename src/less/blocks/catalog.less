@@ -1,0 +1,262 @@
+@catalogColor: #6c6869;
+@catalogBackground: #f4f4f5;
+
+
+.catalog {
+  .container();
+  width: 100%;
+  margin-bottom: 46px;
+  padding: 12px 20px 0 20px;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 13px;
+  .font(full; 24px; 66px; @secondaryFF; 700);
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+
+.catalog__photo {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 10px;
+  padding-top: 9px;
+  padding-left: 14px;
+  background-color: @primaryBack;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.2s linear;
+  &:hover {
+    opacity: 0.6;
+  }
+  &--classic {
+    background-image: url("../img/cake-classic-mobil.jpg");
+  }
+  &--mousse {
+    padding-left: 11px;
+    background-image: url("../img/cake-muss-mobil.jpg");
+  }
+  &--wedding {
+    padding-left: 12px;
+    background-image: url("../img/cake-wedding-mobil.jpg");
+  }
+  &--men {
+    padding-left: 15px;
+    background-image: url("../img/cake-for-men-mobil.jpg");
+  }
+  &--women {
+    padding-left: 16px;
+    background-image: url("../img/cake-for-women-mobil.jpg");
+  }
+  &--kids {
+    padding-left: 15px;
+    background-color: @catalogBackground;
+    background-image: url("../img/cake-for-kids-mobil.jpg");
+  }
+}
+
+
+.catalog__photo-title {
+  margin: 0;
+  margin-bottom: -18px;
+  .font(full; 14px; 22px; @primaryFF; 400);
+}
+
+.catalog__photo-descr {
+  color: @catalogColor;
+  .font(short; 12px; 22px; 400);
+}
+
+
+
+
+@media @tablet-width {
+  .catalog {
+    margin-bottom: 19px;
+    padding: 12px 7px 0 20px;
+  }
+  .catalog__title {
+    margin-bottom: 34px;
+    .font(full; 28px; 39px; @secondaryFF; 700);
+    text-align: left;
+    text-indent: -1px;
+    letter-spacing: 0.16px;
+  }
+  
+  .catalog__items {
+    display: flex;
+  }
+  
+  .catalog__container {
+    width: 39.904%;
+    &--left {
+      width: 39.604%;
+    }
+  }
+
+  .catalog__photo {
+    width: 100%;
+    min-height: 184px;
+    margin-bottom: 20px;
+    padding-top: 18px;
+    padding-left: 25px;
+    background-size: cover;
+    box-shadow: 0px 8px 11px 0px rgba(163, 6, 60, 0.05);
+    &:hover {
+      opacity: 1;
+      box-shadow: 0px 8px 11px 0px rgba(163, 6, 60, 0.15);
+    }
+    &-large {
+      width: 57.9%;
+      min-height: 388px;
+    }
+    &--classic {
+      margin-right: 21px;
+      background-image: url("../img/cake-classic-tablet.jpg");
+    }
+    &--classic::before {
+      content: "Смотреть";
+      position: absolute;
+      right: 72px;
+      bottom: 20px;
+      .font(short; 12px; 12px; 400);
+    }
+    &--classic:hover::before {
+       color: @secondaryBack;
+    }
+    &--mousse {
+      padding-top: 16px;
+      padding-left: 26px;
+      background-image: url("../img/cake-muss-tablet.jpg");
+    }
+    &--wedding {
+      padding-top: 19px;
+      padding-left: 27px;
+      background-image: url("../img/cake-wedding-tablet.jpg");
+    }
+    &--men {
+      padding-top: 25px;
+      background-image: url("../img/cake-for-men-tablet.jpg");
+    }
+    &--women {
+      padding-top: 26px;
+      padding-left: 26px;
+      background-image: url("../img/cake-for-women-tablet.jpg");
+    }
+    &--kids {
+      margin-left: 20px;
+      padding-top: 25px;
+      padding-left: 31px;
+      background-image: url("../img/cake-for-kids-tablet.jpg");
+    }
+  }
+  
+  .catalog__photo-title {
+    margin: 0;
+    margin-bottom: -18px;
+  }
+}
+
+
+
+
+@media @desktop-width {
+  
+  .catalog {
+    margin-bottom: 45px;
+    padding: 0;
+    padding-left: 73px;
+  }
+  
+  .catalog__title {
+    margin-top: -69px;
+    margin-bottom: 54px;
+    letter-spacing: 0.3px;
+    .font(shortest; 40px; 65px);
+  }
+  
+  .catalog__photo {
+    width: 484px;
+    min-height: 305px;
+    margin-bottom: 43px;
+    padding-top: 16px;
+    box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
+    &:hover {
+      box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+    }
+    &::after {
+      .def-pseudo();
+      bottom: 37px;
+      right: 66px;
+      width: 22px;
+      height: 17px;
+      background: url("../img/icon-arrow.svg") no-repeat;
+    }
+    &:hover::after {
+      background: url("../img/icon-arrow-hover.svg") no-repeat;
+    }
+
+    &-large {
+      width: 695px;
+      min-height: 652px;
+    }
+    &--classic {
+      margin-right: 41px;
+      padding-left: 44px;
+      background-image: url("../img/cake-classic-desktop.jpg");
+    }
+    &--classic::before {
+      right: 112px;
+      bottom: 35px;
+      .font(short; 20px; 20px; 400);
+    }
+    &--mousse {
+      padding-top: 12px;
+      padding-left: 47px;
+      background-image: url("../img/cake-muss-desktop.jpg");
+    }
+    &--wedding {
+      padding-top: 13px;
+      padding-left: 48px;
+      background-image: url("../img/cake-wedding-desktop.jpg");
+      & .catalog__photo-title {
+        margin-bottom: -67px;
+      }
+    }
+    &--men {
+      padding-top: 14px;
+      padding-left: 44px;
+      background: url("../img/cake-for-men-desktop.jpg") left -1px top 1px;
+    }
+    &--women {
+      padding-top: 12px;
+      padding-left: 45px;
+      background: url("../img/cake-for-women-desktop.jpg") left -1px top 0;
+    }
+    &--kids {
+      margin-right: 23px;
+      margin-left: 41px;
+      padding-top: 15px;
+      padding-left: 46px;
+      background: url("../img/cake-for-kids-desktop.jpg") left 1px top 1px;
+    }
+  }
+  
+  .catalog__container--left {
+    width: 37.8%;
+  }
+  
+  .catalog__photo-title {
+    margin-bottom: -65px;
+    .font(shortest; 24px; 70px);
+  }
+  
+  .catalog__photo-descr {
+    .font(shortest; 20px; 74px);
+  }
+}

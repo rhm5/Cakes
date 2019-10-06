@@ -1,0 +1,183 @@
+.how-to-order {
+  min-height: 482px;
+  margin-bottom: 32px;
+  color: @primaryColor;
+  background-color: @altBack-4;
+  background-image: url("../img/order-cakes-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.how-to-order__content {
+  padding: 8px 30px 0 67px;
+  text-align: left;
+}
+
+.how-to-order__title {
+  margin: 0;
+  margin-bottom: 37px;
+  margin-left: -35px;
+  .font(full; 24px; 24.74px; @secondaryFF; 700);
+  text-align: center;
+}
+
+.how-to-order__list {
+  .list-reset();
+  margin-left: auto;
+  counter-reset: item;
+}
+
+.how-to-order__item {
+  position: relative;
+  margin-bottom: 22px;
+  &:nth-child(2) {
+    margin-bottom: 25px;
+  }
+  &:nth-child(3) .how-to-order__subtitle{
+    margin-bottom: -6px;
+  }
+  &::before {
+    counter-increment: item;
+    content: counter(item);
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    width: 30px;
+    height: 35px;
+    .font(full; 35px; 63.59px; @secondaryFF; 700);
+  }
+}
+
+.how-to-order__subtitle {
+  margin-bottom: -8px;
+  .font(full; 15px; 15px; @primaryFF; 700);
+  letter-spacing: 0.4px;
+}
+
+.how-to-order__description {
+   .font(full; 14px; 16px; @primaryFF; 400);
+}
+
+
+@media @mobile-width-only {
+  
+  .how-to-order {
+    padding-top: 24px;
+  }
+}
+
+
+@media @tablet-width {
+  
+  .how-to-order {
+    min-height: 420px;
+    margin-bottom: 39px;
+    background-image: url("../img/order-cakes-tablet.jpg");
+    background-position: 0 0;
+  }
+   
+  .how-to-order__content {
+    padding-top: 30px;
+  }
+  
+  .how-to-order__title {
+    margin-bottom: -6px;
+    padding-left: 76px;
+    .font(shortest; 28px; 65.96px);
+  }
+  
+  .how-to-order__list {
+    width: 375px;
+    padding-left: 23px;
+    padding-right: 50px;
+  }
+  
+  .how-to-order__subtitle {
+    margin-bottom: -15px;
+    .font(shortest; 15px; 27px);
+    letter-spacing: 0.15px;
+  }
+  
+  .how-to-order__description {
+    .font(shortest; 14px; 16.999px);
+  }
+  
+  .how-to-order__item {
+    margin-bottom: 27px;
+    margin-left: -4px;
+    &:last-child {
+      width: 205px;
+    }
+    &::before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      top: -74px;
+      left: -40px;
+      width: 35px;
+      height: 36px;
+      .font(shortest; 36px; 169.52px);
+      letter-spacing: 0.02px;
+      }
+   }
+}
+
+
+
+
+@media @desktop-width {
+  
+  .how-to-order {
+    .container();
+    min-height: 702px;
+    margin-bottom: 62px;
+    padding-top: 77px;
+    background-image: url("../img/order-cakes-desktop.jpg");
+    background-position: -97px -1px;
+  }
+     
+  .how-to-order__title {
+    margin-bottom: 30px;
+    margin-left: 453px;
+    .font(shortest; 40px; 65.96px);
+  }
+  
+  .how-to-order__list {
+    width: 490px;
+    margin-left: 820px;
+    padding-left: 0;
+    padding-right: 50px;
+  }
+  
+  .how-to-order__item {
+    margin-bottom: 27px;
+    margin-left: -19px;
+    &:first-child {
+    margin-left: -13px;
+    }
+    &:last-child {
+      width: 430px;
+    }
+    &::before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      top: -71px;
+      left: -49px;
+      width: 25px;
+      height: 64px;
+      .font(shortest; 64px; 169.52px);
+      letter-spacing: 0.04px;
+     }
+   }
+  
+  .how-to-order__subtitle {
+    margin-bottom: -16px;
+    .font(shortest; 21px; 27px);
+    letter-spacing: 0.21px;
+  }
+  
+  .how-to-order__description {
+    .font(shortest; 20px; 24px);
+  }
+}

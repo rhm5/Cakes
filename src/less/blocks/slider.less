@@ -1,0 +1,312 @@
+@sliderBack: #dddddd;
+
+
+.slider {
+  overflow: hidden;
+  min-width: 241px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+.slider__switch {
+  display: none;
+}
+
+.slider__items {
+  display: flex;
+  width: 500%;
+  transition: transform 0.6s ease;
+}
+
+.slider__item {
+  width: 20%;
+  text-align: center;
+}
+
+.slider__photo {
+  position: relative;
+  width: 241px;
+  height: 113px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  &--ganash {
+    background-image: url(../img/cake-fillings-mobil.jpg)
+  }
+  & img {
+    width: 241px;
+    height: 113px;
+  }
+}
+
+.slider-counter {
+  display: none;
+  position: absolute;
+  right: 7px;
+  top: 87px;
+  color: @primaryColor;
+  .font(full; 12px; 25.66px; @primaryFF; 400);
+}
+
+.slider__content {
+  width: 241px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.slider__title {
+  margin: 0;
+  margin-bottom: -15px;
+  .font(full; 16px; 55.65px; @primaryFF; 700);
+}
+
+.slider__descr {
+  margin: 0;
+  margin-bottom: -17px;
+  color: @quaternaryColor;
+  .font(shortest; 14px; 17px);
+}
+
+.slider__price {
+  margin: 0;
+  margin-bottom: 20px;
+  .font(full; 20px; 36.03px; @secondaryFF; 700);
+  text-align: left;
+}
+
+.slider__btn {
+    width: 135px;
+    margin-left: 1px;
+    padding: 11px 0 10px;
+    .font(full; 10px; 22.54px; @primaryFF; 400);
+    border-radius: 22px;
+  }
+
+
+.slider__commands {
+  position: absolute;
+  top: 147px;
+  left: 90px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgb(239, 239, 239);
+  background: @primaryBack;
+  outline: none;
+  cursor: pointer;
+  
+  &:hover {
+    box-shadow: 0px 2px 2px rgb(209, 209, 209);
+  }
+}
+
+.prev {
+  left: 90px;
+}
+
+.next {
+  left: 87.5%;
+}
+
+.prev:after,
+.next:after,
+.decor__prev:after,
+.decor__next:after,
+.reviews__prev:after,
+.reviews__next:after {
+  .def-pseudo();
+  top: 15px;
+  left: 17px;
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
+  border-right: 2px solid @secondaryBack;
+  border-bottom: 2px solid @secondaryBack;
+  transform: rotate(135deg);
+}
+
+.next:after,
+.decor__next:after,
+.reviews__next:after {
+  left: 12px;
+  transform: rotate(-45deg);
+}
+
+
+
+@media @mobile-width-only {
+  
+  .slider__descr {
+    margin-bottom: -5px;
+    color: @quaternaryColor;
+    .font(full; 14px; 16.65px; @primaryFF; 400);
+  }
+  .slider__price {
+    margin-bottom: 4px;
+    padding-left: 1px;
+    .font(full; 18px; 59.17px; @secondaryFF; 700);
+    text-align: center;
+  }
+  .slider__btn {
+    width: 180px;
+    margin-left: 31px;
+    padding: 12px 0;
+    .font(full; 13px; 26.73px; @primaryFF; 400);
+    border-radius: 26px;
+  }
+  .slider__toggles {
+    position: absolute;
+    .align(horizont);
+    top: 171px;
+    left: 50%;
+    z-index: 2;
+    width: 69px;
+    height: 26px;
+    margin-left: -2px;
+    text-align: center;
+    label {
+      .def-ib(middle);
+      margin-right: 2px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: @sliderBack;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+  
+  .slider__commands,
+  .prev:after,
+  .next:after {
+    position: relative;
+    display: none;
+  }
+  
+  .slider-counter {
+    display: block;
+  }
+}
+
+
+
+
+
+@media @tablet-width {
+  .slider {
+    min-width: 425px;
+    min-height: 243px;
+  }
+  
+  .slider__item {
+    display: flex;
+    
+  }
+
+  .slider__photo {
+    margin-top: 53px;
+    margin-right: 24px;
+    width: 210px;
+    & img {
+      width: 210px;
+      height: 239px;
+    }
+  }
+
+  .slider__content {
+    padding-top: 70px;
+    width: 190px;
+  }
+
+  .slider__title {
+    margin-bottom: -2px;
+    .font(shortest; 18px; 32.28px);
+  }
+  
+  .slider__descr {
+    margin-bottom: 1px;
+  }
+  
+  .slider__price {
+    padding-left: 1px;
+  }
+
+  .slider-counter {
+    right: 0;
+    top: 280px;
+    color: @quaternaryColor;
+    .font(shortest; 10.96px; 15.6px);
+  }
+}
+
+
+
+
+@media @desktop-width {
+  .slider {
+    min-width: 660px;
+    min-height: 458px;
+    margin-left: 217px;
+  }
+  .slider__photo {
+    margin-top: 65px;
+    margin-right: 37px;
+    width: 379px;
+    & img {
+      width: 344px;
+      height: 390px;
+    }
+  }
+  .slider__content {
+    padding-top: 118px;
+    padding-left: 2px;
+    width: 307px;
+  }
+  .slider__title {
+    margin-bottom: -12px;
+    padding-left: 1px;
+    .font(shortest; 20px; 54.65px);
+    letter-spacing: 0.11px;
+  }
+  .slider__descr {
+    margin-bottom: -1px;
+    padding-left: 2px;
+    .font(shortest; 18px; 24px);
+  }
+  .slider__price {
+    margin-bottom: 34px;
+    .font(shortest; 22px; 59.17px);
+  }
+  .slider__btn {
+    width: 179px;
+    margin-left: 5px;
+    padding: 14px 0 11px 0;
+    .font(shortest; 13px; 26.73px);
+    border-radius: 26px;
+  }
+  .slider-counter {
+    right: 0;
+    top: 440px;
+    .font(shortest; 18px; 25.62px);
+  }
+  .slider__commands {
+    top: 261px;
+    box-shadow: none;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  
+  .prev {
+    left: 180px;
+  }
+  
+  .next {
+  left: 1066px;
+  }
+}

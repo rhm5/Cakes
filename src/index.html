@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Торты на заказ">
+  <meta name="description" content="Торты, натуральные ингредиенты, индивидуальный заказ, торты мужчинам, торты женщинам, торты детям, свадебные торты, свежие торты">
+  <meta name="author" content="RHM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Торты на заказ</title>
+  <link rel="icon" type="image/png" sizes="180x180" href="img/favicon180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="#" class="page-header__logo">Cakes</a>
+      <nav class="nav  nav--closed  nav--nojs">
+        <button class="nav__toggle" type="button">Меню</button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#catalog">Наши торты</a></li>
+            <li class="nav__item"><a href="#order">Индивидуальный заказ</a></li>
+            <li class="nav__item"><a href="#reviews">Отзывы</a></li>
+            <li class="nav__item"><a href="#about">О нас</a></li>
+            <li class="nav__item"><a href="#how-to-order">Как заказать</a></li>
+            <li class="nav__item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <a class="page-header_phone" href="tel:+79068999296">+7 906 899 92 96</a>
+    </div>
+  </header>
+
+
+
+
+
+  <main class="page-main">
+    <div class="intro">
+      <div class="intro__wrapper">
+        <section class="intro__container">
+          <h1 class="intro__title">Торты<br>на заказ</h1>
+          <p class="intro__description">Ручная работа</p>
+          <a class="intro__btn btn" href="">Выбрать торт</a>
+
+          <ul class="intro__list">
+            <li class="intro__item intro__item--ingridients">Натуральные ингредиенты</li>
+            <li class="intro__item intro__item--delivery">Доставка бесплатно при&nbsp;заказе от 2000 рублей<sup>*</sup></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <section class="catalog" id="catalog">
+      <h2 class="catalog__title">Наши торты</h2>
+      <article class="catalog__items">
+        <a href="" class="catalog__photo catalog__photo-large catalog__photo--classic">
+          <h3 class="catalog__photo-title">Классические</h3>
+          <p class="catalog__photo-descr">24 вида</p>
+        </a>
+
+        <div class="catalog__container">
+          <a href="" class="catalog__photo catalog__photo-small catalog__photo--mousse">
+            <h3 class="catalog__photo-title">Муссовые</h3>
+            <p class="catalog__photo-descr">12 видов</p>
+          </a>
+          <a href="" class="catalog__photo catalog__photo-small catalog__photo--wedding">
+            <h3 class="catalog__photo-title">Свадебные</h3>
+            <p class="catalog__photo-descr">20 видов</p>
+          </a>
+        </div>
+      </article>
+
+      <article class="catalog__items">
+        <div class="catalog__container catalog__container--left">
+          <a href="" class="catalog__photo catalog__photo-small catalog__photo--men">
+            <h3 class="catalog__photo-title">Мужчинам</h3>
+            <p class="catalog__photo-descr">12 видов</p>
+          </a>
+          <a href="" class="catalog__photo catalog__photo-small catalog__photo--women">
+            <h3 class="catalog__photo-title">Женщинам</h3>
+            <p class="catalog__photo-descr">16 видов</p>
+          </a>
+        </div>
+        <a href="" class="catalog__photo catalog__photo-large catalog__photo--kids">
+          <h3 class="catalog__photo-title">Детские</h3>
+          <p class="catalog__photo-descr">18 видов</p>
+        </a>
+      </article>
+    </section>
+
+
+
+    <div class="order" id="order">
+      <h2 class="order__title">Индивидуальный заказ</h2>
+      <p class="order__descr">Соберите торт в 3 шага</p>
+      <section class="order__items">
+        <h2 class="visually-hidden">Индивидуальный заказ</h2>
+        <article class="order__item fillings">
+          <h3 class="visually-hidden">Выбор начинки</h3>
+          <div class="order__choise">
+            <span class="order__step">01</span>
+            <p class="order__parameter">Выберите начинку</p>
+          </div>
+          
+          <div class="fillings__counter-container">
+            <span class="fillings__counter-dividend">1</span><span class="counter__slash">/</span><span class="counter-divider">12</span>
+          </div>
+          
+          <div class="fillings__slider  slider">
+            <input class="slider__switch" type="radio" name="fillings" id="fillings-switch-1" checked>
+            <input class="slider__switch" type="radio" name="fillings" id="fillings-switch-2">
+            <input class="slider__switch" type="radio" name="fillings" id="fillings-switch-3">
+            <input class="slider__switch" type="radio" name="fillings" id="fillings-switch-4">
+            <input class="slider__switch" type="radio" name="fillings" id="fillings-switch-5">
+
+            <div class="fillings__toggles slider__toggles">
+              <label class="slider__toggle slider__toggle--first" for="fillings-switch-1"></label>
+              <label class="slider__toggle  slider__toggle--second" for="fillings-switch-2"></label>
+              <label class="slider__toggle  slider__toggle--third" for="fillings-switch-3"></label>
+              <label class="slider__toggle  slider__toggle--fourth" for="fillings-switch-4"></label>
+              <label class="slider__toggle  slider__toggle--fifth" for="fillings-switch-5"></label>
+            </div>
+
+            <div class="slider__items">
+              <article class="slider__item">
+                <figure class="slider__photo slider__photo--ganash">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-fillings-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-fillings-tablet.jpg">
+                    <img src="img/cake-fillings-mobil.jpg" alt="Шоколадный ганаш">
+                  </picture>
+                  <span class="slider-counter">1/12</span>
+                </figure>
+                <div class="slider__content">
+                  <h3 class="slider__title">Шоколадный ганаш</h3>
+                  <p class="slider__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <p class="slider__price">1000 руб/кг</p>
+                  <button class="slider__btn btn" type="submit" name="ganash">Выбрать</button>
+                </div>
+              </article>
+
+              <article class="slider__item">
+                <figure class="slider__photo slider__photo--ganash">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-fillings-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-fillings-tablet.jpg">
+                    <img src="img/cake-fillings-mobil.jpg" alt="Шоколадный ганаш">
+                  </picture>
+                  <span class="slider-counter">2/12</span>
+                </figure>
+                <div class="slider__content">
+                  <h3 class="slider__title">Шоколадный ганаш1</h3>
+                  <p class="slider__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <p class="slider__price">2000 руб/кг</p>
+                  <button class="slider__btn btn" type="submit" name="ganash1">Выбрать</button>
+                </div>
+              </article>
+
+              <article class="slider__item">
+                <figure class="slider__photo slider__photo--ganash">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-fillings-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-fillings-tablet.jpg">
+                    <img src="img/cake-fillings-mobil.jpg" alt="Шоколадный ганаш">
+                  </picture>
+                  <span class="slider-counter">3/12</span>
+                </figure>
+                <div class="slider__content">
+                  <h3 class="slider__title">Шоколадный ганаш2</h3>
+                  <p class="slider__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <p class="slider__price">3000 руб/кг</p>
+                  <button class="slider__btn btn" type="submit" name="ganash2">Выбрать</button>
+                </div>
+              </article>
+
+              <article class="slider__item">
+                <figure class="slider__photo slider__photo--ganash">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-fillings-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-fillings-tablet.jpg">
+                    <img src="img/cake-fillings-mobil.jpg" alt="Шоколадный ганаш">
+                    <span class="slider-counter">4/12</span></picture>
+
+                </figure>
+                <div class="slider__content">
+                  <h3 class="slider__title">Шоколадный ганаш3</h3>
+                  <p class="slider__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <p class="slider__price">4000 руб/кг</p>
+                  <button class="slider__btn btn" type="submit" name="ganash3">Выбрать</button>
+                </div>
+              </article>
+
+              <article class="slider__item">
+                <figure class="slider__photo slider__photo--ganash">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-fillings-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-fillings-tablet.jpg">
+                    <span class="slider-counter">5/12</span> <img src="img/cake-fillings-mobil.jpg" alt="Шоколадный ганаш">
+                  </picture>
+
+                </figure>
+                <div class="slider__content">
+                  <h3 class="slider__title">Шоколадный ганаш4</h3>
+                  <p class="slider__descr">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                  <p class="slider__price">5000 руб/кг</p>
+                  <button class="slider__btn btn" type="submit" name="ganash4">Выбрать</button>
+                </div>
+              </article>
+            </div>
+
+            <label class="slider__commands prev slider__commands1" for="fillings-switch-5" title="Go to the last slide"></label>
+            <label class="slider__commands next slider__commands1" for="fillings-switch-2" title="Go to the 2nd slide"></label>
+
+            <label class="slider__commands prev slider__commands2" for="fillings-switch-1" title="Go to the 1rst slide"></label>
+            <label class="slider__commands next slider__commands2" for="fillings-switch-3" title="Go to the 3rd slide"></label>
+
+            <label class="slider__commands prev slider__commands3" for="fillings-switch-2" title="Go to the 2nd slide"></label>
+            <label class="slider__commands next slider__commands3" for="fillings-switch-4" title="Go to the 4th slide"></label>
+
+            <label class="slider__commands prev slider__commands4" for="fillings-switch-3" title="Go to the 3rd slide"></label>
+            <label class="slider__commands next slider__commands4" for="fillings-switch-5" title="Go to the last slide"></label>
+
+            <label class="slider__commands prev slider__commands5" for="fillings-switch-4" title="Go to the 4rd slide"></label>
+            <label class="slider__commands next slider__commands5" for="fillings-switch-1" title="Go to the first slide"></label>
+          </div>
+        </article>
+
+
+        <article class="order__item size">
+          <h3 class="visually-hidden">Выбор размера</h3>
+          <div class="order__choise">
+            <span class="order__step">02</span>
+            <p class="order__parameter">Размер</p>
+          </div>
+
+          <div class="size__slider  slider">
+            <input class="slider__switch" type="radio" name="size" id="size-switch-1" checked>
+            <input class="slider__switch" type="radio" name="size" id="size-switch-2">
+            <input class="slider__switch" type="radio" name="size" id="size-switch-3">
+            <input class="slider__switch" type="radio" name="size" id="size-switch-4">
+
+            <div class="size__toggles slider__toggles">
+              <label class="slider__toggle slider__toggle--first" for="size-switch-1"></label>
+              <label class="slider__toggle  slider__toggle--second" for="size-switch-2"></label>
+              <label class="slider__toggle  slider__toggle--third" for="size-switch-3"></label>
+              <label class="slider__toggle  slider__toggle--fourth" for="size-switch-4"></label>
+            </div>
+
+
+            <div class="size__slider-items">
+              <label class="size__slider-item size__slider-item--one-kg" for="one-kg">
+                <input class="visually-hidden" type="radio" form="order-form" name="cake-size" id="one-kg">
+                <div class="size__weight size__weight--small">1 кг</div>
+                <p>17-18 см</p>
+                <p class="size__quantity">(1 кг – 6 персон)</p>
+                <button class="size__btn btn" type="submit" name="1kg">Выбрать</button>
+              </label>
+
+              <label class="size__slider-item size__slider-item--two-kg" for="two-kg">
+                <input class="visually-hidden" type="radio" form="order-form" name="cake-size" id="two-kg">
+                <div class="size__weight size__weight--medium">2 кг</div>
+                <p>23-24 см</p>
+                <p class="size__quantity">(10–12 персон)</p>
+                <button class="size__btn btn" type="submit" name="2kg">Выбрать</button>
+              </label>
+
+              <label class="size__slider-item size__slider-item--five-kg" for="five-kg">
+                <input class="visually-hidden" type="radio" form="order-form" name="cake-size" id="five-kg">
+                <div class="size__weight size__weight--large">5 кг</div>
+                <p>Два яруса 25 и 20 см</p>
+                <p class="size__quantity">(15–20 персон)</p>
+                <button class="size__btn btn" type="submit" name="5kg">Выбрать</button>
+              </label>
+
+              <label class="size__slider-item size__slider-item--eight-kg" for="eight-kg">
+                <input class="visually-hidden" type="radio" form="order-form" name="cake-size" id="eight-kg">
+                <div class="size__weight size__weight--huge">8 кг</div>
+                <p>Три яруса 30,25 и 18 см</p>
+                <p class="size__quantity">(25–30 персон)</p>
+                <button class="size__btn btn" type="submit" name="8kg">Выбрать</button>
+              </label>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="order__item decor">
+          <h3 class="visually-hidden">Выбор оформления</h3>
+          <div class="order__choise">
+            <span class="order__step">03</span>
+            <p class="order__parameter">Оформление</p>
+          </div>
+
+          <div class="decor__counter-container">
+            <span class="decor__counter-dividend">2</span><span class="counter__slash">/</span><span class="counter-divider">34</span>
+          </div>
+
+          <div class="decor__slider slider">
+            <input class="slider__switch" type="radio" name="decor" id="decor-switch-1" checked>
+            <input class="slider__switch" type="radio" name="decor" id="decor-switch-2">
+            <input class="slider__switch" type="radio" name="decor" id="decor-switch-3">
+            <input class="slider__switch" type="radio" name="decor" id="decor-switch-4">
+            <input class="slider__switch" type="radio" name="decor" id="decor-switch-5">
+
+            <div class="slider__toggles decor__toggles">
+              <label class="slider__toggle slider__toggle--first" for="decor-switch-1"></label>
+              <label class="slider__toggle  slider__toggle--second" for="decor-switch-2"></label>
+              <label class="slider__toggle  slider__toggle--third" for="decor-switch-3"></label>
+              <label class="slider__toggle  slider__toggle--fourth" for="decor-switch-4"></label>
+              <label class="slider__toggle  slider__toggle--fifth" for="decor-switch-5"></label>
+            </div>
+
+            <div class="decor__slider-items">
+
+              <article class="decor__slider-item">
+                <figure class="decor__photo decor__photo--berry">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-designs-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-designs-tablet.jpg">
+                    <img src="img/cake-designs-tablet.jpg" alt="Ягодное ассорти">
+
+                    <span class="decor-counter">1/35</span>
+                    <h3 class="decor__title">Ягодное ассорти</h3>
+                    <p class="decor__price">700 руб/кг</p>
+                  </picture>
+                </figure>
+
+                <button class="decor__btn btn" type="submit" name="ganash3">Выбрать</button>
+              </article>
+
+              <article class="decor__slider-item">
+                <figure class="decor__photo decor__photo--marshmallows">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-designs1-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-designs1-tablet.jpg">
+                    <img src="img/cake-designs1-mobil.jpg" alt="Зефир">
+                  </picture>
+                  <span class="decor-counter">2/35</span>
+                  <h3 class="decor__title">Маршмэллоу</h3>
+                  <p class="decor__price">600 руб/кг</p>
+                </figure>
+                <button class="decor__btn decor__btn btn" type="submit" name="ganash3">Выбрать</button>
+              </article>
+
+              <article class="decor__slider-item">
+                <figure class="decor__photo decor__photo--marshmallows">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-designs1-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-designs1-tablet.jpg">
+                    <img src="img/cake-designs1-mobil.jpg" alt="Зефир">
+                  </picture>
+                  <span class="decor-counter">3/35</span>
+                  <h3 class="decor__title">Маршмэллоу</h3>
+                  <p class="decor__price">1500 руб/кг</p>
+                </figure>
+                <button class="decor__btn btn" type="submit" name="ganash3">Выбрать</button>
+              </article>
+
+              <article class="decor__slider-item">
+                <figure class="decor__photo decor__photo--berry">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-designs-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-designs-tablet.jpg">
+                    <img src="img/cake-designs-tablet.jpg" alt="Ягодное ассорти">
+                  </picture>
+                  <span class="decor-counter">4/35</span>
+                  <h3 class="decor__title">Ягодное ассорти</h3>
+                  <p class="decor__price">1000 руб/кг</p>
+                </figure>
+                <button class="decor__btn btn" type="submit" name="ganash3">Выбрать</button>
+              </article>
+
+              <article class="decor__slider-item">
+                <figure class="decor__photo decor__photo--marshmallows">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/cake-designs1-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="img/cake-designs1-tablet.jpg">
+                    <img src="img/cake-designs1-mobil.jpg" alt="Зефир">
+                  </picture>
+                  <span class="decor-counter">5/35</span>
+                  <h3 class="decor__title">Маршмэллоу</h3>
+                  <p class="decor__price">2000 руб/кг</p>
+                </figure>
+                <button class="decor__btn btn" type="submit" name="ganash3">Выбрать</button>
+              </article>
+            </div>
+            <label class="slider__commands decor__prev slider__commands1" for="decor-switch-5" title="Go to the last slide"></label>
+            <label class="slider__commands decor__next slider__commands1" for="decor-switch-2" title="Go to the 2nd slide"></label>
+
+            <label class="slider__commands decor__prev slider__commands2" for="decor-switch-1" title="Go to the 1rst slide"></label>
+            <label class="slider__commands decor__next slider__commands2" for="decor-switch-3" title="Go to the 3rd slide"></label>
+
+            <label class="slider__commands decor__prev slider__commands3" for="decor-switch-2" title="Go to the 2nd slide"></label>
+            <label class="slider__commands decor__next slider__commands3" for="decor-switch-4" title="Go to the 4th slide"></label>
+
+            <label class="slider__commands decor__prev slider__commands4" for="decor-switch-3" title="Go to the 3rd slide"></label>
+            <label class="slider__commands decor__next slider__commands4" for="decor-switch-5" title="Go to the first slide"></label>
+
+            <label class="slider__commands decor__prev slider__commands5" for="decor-switch-4" title="Go to the 3rd slide"></label>
+            <label class="slider__commands decor__next slider__commands5" for="decor-switch-1" title="Go to the first slide"></label>
+          </div>
+
+          <div class="order__form form">
+            <h3 class="form__title">Ваш выбор</h3>
+            <form class="form__items" action="#" method="post">
+              <div class="form__item form__item--filling">
+                <label for="filling" class="form__label form__label--filling">Начинка</label>
+                <input type="text" name="filling" id="filling" value="Шоколадный ганаш">
+              </div>
+              <div class="form__item form__item--size">
+                <label for="size" class="form__label form__label--size">Размер</label>
+                <input type="text" name="size" id="size" value="2  кг">
+              </div>
+              <div class="form__item form__item--decor">
+                <label for="decor" class="form__label form__label--decor">Оформление</label>
+                <input type="text" name="decor" id="decor" value="Маршмэллоу">
+              </div>
+              <button class="form__btn  btn" type="submit">Заказать торт</button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </div>
+
+
+    <div class="reviews" id="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+
+      <div class="reviews__counter-container">
+        <span class="reviews__counter-dividend">1</span><span class="counter__slash">/</span><span class="counter-divider">26</span>
+      </div>
+
+      <div class="reviews__slider slider">
+        <input class="slider__switch" type="radio" name="reviews" id="reviews-switch-1" checked>
+        <input class="slider__switch" type="radio" name="reviews" id="reviews-switch-2">
+        <input class="slider__switch" type="radio" name="reviews" id="reviews-switch-3">
+        <input class="slider__switch" type="radio" name="reviews" id="reviews-switch-4">
+        <input class="slider__switch" type="radio" name="reviews" id="reviews-switch-5">
+
+        <div class="reviews__toggles slider__toggles">
+          <label class="slider__toggle slider__toggle--first" for="reviews-switch-1"></label>
+          <label class="slider__toggle slider__toggle--second" for="reviews-switch-2"></label>
+          <label class="slider__toggle slider__toggle--third" for="reviews-switch-3"></label>
+          <label class="slider__toggle slider__toggle--fourth" for="reviews-switch-4"></label>
+          <label class="slider__toggle slider__toggle--fifth" for="reviews-switch-5"></label>
+        </div>
+
+        <div class="reviews__slider-items">
+          <blockquote class="reviews__slider-item">
+            <div class="reviews__slider-photo reviews__slider-photo--maria"></div>
+            <div class="reviews__item-content">
+              <span class="reviews__item-author">Мария</span>
+              <span class="reviews__client-info">юрист, 33 года</span>
+              <p class="reviews__item-descr">
+                Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную доставку! Теперь будем заказывать торты только у&nbsp;вас для наших семейных праздников:)
+                <a href="#">Развернуть</a>
+                <span class="reviews-counter">1/26</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="reviews__slider-item">
+            <div class="reviews__slider-photo reviews__slider-photo--akulina"></div>
+            <div class="reviews__item-content">
+              <cite class="reviews__item-author">Акулина<span class="reviews__client-info">домохозяйка, 3 года</span></cite>
+              <p class="reviews__item-descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                <a href="#">Развернуть</a>
+                <span class="reviews-counter">2/26</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="reviews__slider-item">
+            <div class="reviews__slider-photo reviews__slider-photo--oksana"></div>
+            <div class="reviews__item-content">
+              <cite class="reviews__item-author">Оксана<span class="reviews__client-info">кондитер, 33 года</span></cite>
+              <p class="reviews__item-descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                <a href="#">Развернуть</a>
+                <span class="reviews-counter">3/26</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="reviews__slider-item">
+            <div class="reviews__slider-photo reviews__slider-photo--melanja"></div>
+            <div class="reviews__item-content">
+              <cite class="reviews__item-author">Меланья<span class="reviews__client-info">сова, 3 года</span></cite>
+              <p class="reviews__item-descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                <a href="#">Развернуть</a>
+                <span class="reviews-counter">4/26</span>
+              </p>
+            </div>
+          </blockquote>
+
+          <blockquote class="reviews__slider-item">
+            <div class="reviews__slider-photo reviews__slider-photo--vasiliy"></div>
+            <div class="reviews__item-content">
+              <cite class="reviews__item-author">Василий<span class="reviews__client-info">кузнечик, 1 год</span></cite>
+              <p class="reviews__item-descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                <a href="#">Развернуть</a>
+                <span class="reviews-counter">5/26</span>
+              </p>
+            </div>
+          </blockquote>
+        </div>
+
+        <label class="slider__commands reviews__prev slider__commands1" for="reviews-switch-5" title="Go to the last slide"></label>
+        <label class="slider__commands reviews__next slider__commands1" for="reviews-switch-2" title="Go to the 2nd slide"></label>
+
+        <label class="slider__commands reviews__prev slider__commands2" for="reviews-switch-1" title="Go to the 1rst slide"></label>
+        <label class="slider__commands reviews__next slider__commands2" for="reviews-switch-3" title="Go to the 3rd slide"></label>
+
+        <label class="slider__commands reviews__prev slider__commands3" for="reviews-switch-2" title="Go to the 2nd slide"></label>
+        <label class="slider__commands reviews__next slider__commands3" for="reviews-switch-4" title="Go to the 4th slide"></label>
+
+        <label class="slider__commands reviews__prev slider__commands4" for="reviews-switch-3" title="Go to the 3rd slide"></label>
+        <label class="slider__commands reviews__next slider__commands4" for="reviews-switch-5" title="Go to the first slide"></label>
+
+        <label class="slider__commands reviews__prev slider__commands5" for="reviews-switch-4" title="Go to the 3rd slide"></label>
+        <label class="slider__commands reviews__next slider__commands5" for="reviews-switch-1" title="Go to the first slide"></label>
+
+      </div>
+    </div>
+
+
+
+    <div class="about" id="about">
+      <section class="about__items">
+        <h2 class="about__title">О нас</h2>
+        <div class="about__item">
+          <h3 class="about__subtitle">О кондитере</h3>
+          <h4 class="about__subsubtitle">Кондитер &ndash; как призвание</h4>
+          <p class="about__description">Павел&nbsp;&mdash; профессиональный повар&nbsp;в различных гастрономических областях,&nbsp;но однажды его сердце покорило кондитерское искусство.<br> С&nbsp;ранних лет он&nbsp;увлекался утонченным мастерством и&nbsp;обратился к&nbsp;своим талантам как кондитер.
+          </p>
+          <h4 class="about__subsubtitle">Принцип &ndash; натуральные ингредиенты</h4>
+          <p class="about__description">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а&nbsp;главным принципом является выбор натуральных ингредиентов.
+          </p>
+        </div>
+
+
+        <ul class="about__list social">
+          <li class="about__social-btn"><a href="">Инстаграм
+              <svg class="about__social-icon about__social-icon--instagram">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg></a>
+          </li>
+
+          <li class="about__social-btn"><a href="">В контакте
+              <svg class="about__social-icon about__social-icon--vk">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg></a>
+          </li>
+
+          <li class="about__social-btn"><a href="">Твиттер
+              <svg class="about__social-icon about__social-icon--twitter">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#twitter"></use>
+              </svg></a>
+          </li>
+        </ul>
+
+        <div class="about__photo"></div>
+      </section>
+
+      <blockquote class="about__quote">
+        <p class="about__quote-before">’’</p>
+        <p class="about__quote-descr">Я за простые рецепты. В Италии это называют cucina povera: когда&nbsp;обычные ингредиенты превращаются в&nbsp;божественное&nbsp;блюдо.
+        </p>
+        <div class="about__sign"></div>
+      </blockquote>
+    </div>
+
+
+    <div class="advantages">
+      <h2 class="advantages__title">Наши преимущества</h2>
+      <h3 class="advantages__subtitle">Почему нас выбирают ?</h3>
+      <section class="advantages__content">
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--ingredients">
+            <h4>Без искусственных добавок</h4>
+            <p>Работаем&nbsp;&nbsp;с&nbsp;натуральными&nbsp;ингредиентами и&nbsp;свежими продуктами</p>
+          </li>
+          <li class="advantages__item advantages__item--fresh-cake">
+            <h4>Свежий торт в день торжества</h4>
+            <p>Торты изготавливаются в течение суток&nbsp;до&nbsp;отправки</p>
+          </li>
+        </ul>
+        <div class="advantages__bg"></div>
+      </section>
+    </div>
+
+
+    <div class="care">
+      <section class="care__content">
+        <h2 class="care__title">Забота о клиентах</h2>
+        <h3 class="care__subtitle">Для нас важно</h3>
+        <p class="care__description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для&nbsp;вас&nbsp;и&nbsp;для&nbsp;вашего события.</p>
+      </section>
+      <div class="care__bg"></div>
+    </div>
+
+
+    <div class="how-to-order" id="how-to-order">
+      <section class="how-to-order__content">
+        <h3 class="how-to-order__title">Как заказать</h3>
+        <ul class="how-to-order__list">
+          <li class="how-to-order__item">
+            <h4 class="how-to-order__subtitle">Срок заказа</h4>
+            <p class="how-to-order__description">Размещать заказы желательно за 2-3&nbsp;дня. На&nbsp;выходные заказы лучше размещать минимум&nbsp;за&nbsp;неделю.</p>
+          </li>
+          <li class="how-to-order__item">
+            <h4 class="how-to-order__subtitle">Доставка по городу</h4>
+            <p class="how-to-order__description">Доставка в пределах города 200 рублей, при&nbsp;заказе&nbsp;на&nbsp;сумму&nbsp;более 2000 доставка бесплатно.</p>
+          </li>
+          <li class="how-to-order__item">
+            <h4 class="how-to-order__subtitle">Доставка за городом</h4>
+            <p class="how-to-order__description">Доставка за пределами города рассчитывается индивидуально.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+
+
+    <div class="contacts" id="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <h3 class="contacts__subtitle">Остались вопросы?</h3>
+      <div class="contacts__wrapper">
+        <div class="contacts__column contacts__column--left">
+          <p class="contacts__form-description">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+          <form class="contacts__form" action="#" method="post">
+            <input class="contacts__text" type="text" name="name" id="name" placeholder="Ваше имя">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+
+            <input class="contacts__text" type="email" name="email" id="email" placeholder="Email адрес">
+            <label class="visually-hidden" for="email">Email адрес</label>
+
+            <textarea class="contacts__text contacts__text--message" name="question" placeholder="Ваш вопрос"></textarea>
+          </form>
+          <div class="contacts__btn-wrapper">
+            <button class="contacts__btn btn" type="submit">Отправить</button>
+          </div>
+        </div>
+
+        <div class="contacts__column contacts__column--right">
+          <p class="contacts__info">Или позвоните по телефону:
+            <a href="tel:+79068999296">+7&nbsp;906&nbsp;899 92 96</a>
+          </p>
+
+          <p class="contacts__info">Наша почта :
+            <a href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a>
+          </p>
+
+          <p class="contacts__info">Мы в соц. сетях:</p>
+
+          <ul class="contacts__list">
+            <li class="contacts__social-btn">
+              <a href="#">Инстаграм
+                <svg class="contacts__social-icon contacts__social-icon--instagram">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="contacts__social-btn">
+              <a href="#">В контакте
+                <svg class="contacts__social-icon contacts__social-icon--vk">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-vk"> </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <nav class="page-footer__nav">
+        <a href="#" class="page-footer__logo">Cakes</a>
+        <div class="page-footer__nav-wrapper">
+          <ul class="page-footer__nav-list">
+            <li class="page-footer__nav-item"><a href="#catalog">Наши торты</a></li>
+            <li class="page-footer__nav-item"><a href="#order">Индивидуальный заказ</a></li>
+            <li class="page-footer__nav-item"><a href="#reviews">Отзывы</a></li>
+            <li class="page-footer__nav-item"><a href="#about">О нас</a></li>
+            <li class="page-footer__nav-item"><a href="#how-to-order">Как заказать</a></li>
+            <li class="page-footer__nav-item"><a href="#contacts">Контакты</a></li>
+            <li class="page-footer__nav-item page-footer__nav-item--phone"><a href="tel:+79068999296">+7 906 899 92 96</a></li>
+          </ul>
+        </div>
+        <div class="page-footer__top-wrapper">
+          <ul class="page-footer__list">
+            <li class="page-footer__social-btn">
+              <a href="#">Инстаграм
+                <svg class="page-footer__social-icon page-footer__social-icon--instagram">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="page-footer__social-btn">
+              <a href="#">В контакте
+                <svg class="page-footer__social-icon page-footer__social-icon--vk">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-vk"> </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-footer__bottom-wrapper">
+        <ul class="page-footer__list page-footer__list--bottom">
+          <li class="page-footer__social-btn">
+            <a href="#">Инстаграм
+              <svg class="page-footer__social-icon page-footer__social-icon--instagram">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="page-footer__social-btn">
+            <a href="#">В контакте
+              <svg class="page-footer__social-icon page-footer__social-icon--vk">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-vk"> </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="page-footer__copyright">&copy;&nbsp;&nbsp;2018 Cakes</span>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

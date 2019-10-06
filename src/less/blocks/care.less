@@ -1,0 +1,118 @@
+.care {
+  position: relative;
+  .container();
+  min-height: 331px;
+  padding-top: 10px;
+  color: @reviewsColor;
+}
+
+.care__content {
+  padding: 0 18px;
+}
+
+.care__title {
+  margin-bottom: -44px;
+  padding-left: 3px;
+  .font(full; 24px; 33px; @secondaryFF; 700);
+}
+
+.care__subtitle {
+  margin-bottom: -40px;
+  color: @aboutColor;
+  .font(full; 22px; 77.95px; @tertiaryFF; H2 Base);
+  letter-spacing: -0.37px
+}
+
+.care__description {
+  padding-left: 1px;
+ .font(full; 14px; 17px; @primaryFF; 400);
+}
+
+
+.care__bg {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 320px;
+  height: 168px;
+  background-image: url("../img/care-bg-mobile.jpg");
+  z-index: -1;
+}
+
+
+@media @tablet-width {
+  
+  .care {
+    min-height: 250px;
+    margin-bottom: -21px;
+    padding-top: 0;
+  }
+  
+  .care__content {
+    padding: 0 44px;
+  }
+  
+  .care__title {
+    margin-bottom: -20px;
+    .font(shortest; 28px; 18.15px);
+  }
+  
+  .care__subtitle {
+    margin-bottom: -16px;
+    padding-left: 1px;
+    .font(shortest; 26px; 42.86px);
+    letter-spacing: -0.09px
+  }
+  
+  .care__description {
+    width: 310px;
+    padding-left: 3px;
+  }
+  
+  .care__bg {
+    right: -13px;
+    bottom: 7px;
+    width: 418px;
+    height: 417px;
+    background-image: url("../img/care-bg-tablet.jpg");
+    z-index: -1;
+  }
+}
+
+
+
+
+@media @desktop-width {
+  
+  .care {
+    margin-bottom: 183px;
+  }
+  
+  .care__content {
+    padding: 0 70px;
+  }
+  
+  .care__title {
+    margin-bottom: -28px;
+    .font(shortest; 40px; 33px);
+  }
+  
+  .care__subtitle {
+    margin-bottom: -30px;
+    .font(shortest; 35px; 77.95px);
+  }
+  
+  .care__description {
+    width: 445px;
+    .font(shortest; 20px; 24px);
+  }
+  
+  .care__bg {
+    bottom: -212px;
+    left: 598px;
+    width: 818px;
+    height: 802px;
+    background-image: url("../img/care-bg-desktop.jpg");
+    z-index: -1;
+  }
+}

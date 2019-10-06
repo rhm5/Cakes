@@ -1,0 +1,106 @@
+#fillings-switch-1:checked ~ .slider__items {
+  transform: translate(0);
+}
+
+#fillings-switch-1:checked ~ .slider__commands {
+  display: none;
+}
+
+#fillings-switch-1:checked ~ .slider__commands1 {
+  display: block;
+}
+
+
+#fillings-switch-2:checked ~ .slider__items {
+  transform: translate(-20%);
+}
+
+#fillings-switch-2:checked ~ .slider__commands {
+  display: none;
+}
+
+#fillings-switch-2:checked ~ .slider__commands2 {
+  display: block;
+}
+
+
+#fillings-switch-3:checked ~ .slider__items {
+  transform: translate(-40%);
+}
+
+#fillings-switch-3:checked ~ .slider__commands {
+  display: none;
+}
+
+#fillings-switch-3:checked ~ .slider__commands3 {
+  display: block;
+}
+
+
+#fillings-switch-4:checked ~ .slider__items {
+  transform: translate(-60%);
+}
+
+#fillings-switch-4:checked ~ .slider__commands {
+  display: none;
+}
+
+#fillings-switch-4:checked ~ .slider__commands4 {
+  display: block;
+}
+
+#fillings-switch-5:checked ~ .slider__items {
+  transform: translate(-80%);
+}
+
+#fillings-switch-5:checked ~ .slider__commands {
+  display: none;
+}
+
+#fillings-switch-5:checked ~ .slider__commands5 {
+  display: block;
+}
+
+
+
+@media @mobile-width-only {
+  .filings {
+    height: 430px;
+  }
+
+  #fillings-switch-1:checked ~ .slider__toggles .slider__toggle--first,
+  #fillings-switch-2:checked ~ .slider__toggles .slider__toggle--second,
+  #fillings-switch-3:checked ~ .slider__toggles .slider__toggle--third,
+  #fillings-switch-4:checked ~ .slider__toggles .slider__toggle--fourth,
+  #fillings-switch-5:checked ~ .slider__toggles .slider__toggle--fifth {
+    width: 8px;
+    height: 8px;
+    background: @secondaryBack
+  }
+
+  #fillings-switch-4:checked ~ .slider__toggles .slider__toggle--fifth {
+    width: 6px;
+    height: 6px;
+  }
+
+  #fillings-switch-5:checked ~ .slider__toggles .slider__toggle--first {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+
+
+
+
+@media @tablet-width {
+
+  .fillings {
+    position: relative;
+    height: 348px;
+  }
+
+  .fillings__slider {
+    margin-left: 129px;
+  }
+}

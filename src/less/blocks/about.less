@@ -1,0 +1,317 @@
+@aboutColor: #32313d;
+
+.about {
+  min-height: 565px;
+  padding: 2px 19px 0 20px;
+  color: @reviewsColor;
+}
+
+.about__title {
+  width: 280px;
+  .font(full; 24px; 33px; @secondaryFF; 700);
+  text-align: center;
+  order: -1;
+}
+
+.about__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  margin-top: -14px;
+  padding: 0;
+  order: 2;
+}
+
+.about__subtitle {
+  margin: 0;
+  margin-bottom: -19px;
+  margin-left: -3px;
+  color: @aboutColor;
+  .font(full; 22px; 77.95px; @tertiaryFF; H2 Base);
+  letter-spacing: -0.4px;
+}
+
+.about__subsubtitle {
+  margin: 0;
+  margin-bottom: 8px;
+  .font(full; 14px; 14px; @primaryFF; 900);
+  letter-spacing: 0.3px;
+}
+
+.about__description {
+  margin: 0;
+  margin-bottom: 15px;
+  .font(full; 14px; 17.2px; @primaryFF; 400);
+}
+
+.about__list {
+  width: 36px;
+  .list-reset();
+  margin-left: 34px;
+  font-size: 0;
+  order: 1;
+}
+
+.about__social-btn {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background: @primaryBack;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
+  }
+}
+
+.about__social-icon {
+  position: absolute;
+  fill: @tertiaryColor;
+  &--instagram {
+    top: 9px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+  }
+  &--vk {
+    top: 9px;
+    left: 3px;
+    width: 31px;
+    height: 22px;
+  }
+  &--twitter {
+    top: 10px;
+    left: 9px;
+    width: 19px;
+    height: 19px;
+  }
+}
+  
+.about__photo {
+  width: 156px;
+  height: 155px;
+  border-radius: 50%;
+  background-image: url("../img/avatar2-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 55% 29%;
+}
+
+.about__quote {
+  width: 265px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.about__quote-before {
+  margin-bottom: -45px;
+  color: @primaryColor;
+  .font(full; 60px; 87.91px; @secondaryFF; 700);
+  text-align: center;
+}
+
+.about__quote-descr {
+  margin: 0;
+  margin-top: -95px;
+  margin-bottom: 18px;
+  .font(full; 13px; 16px; @secondaryFF; 700);
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.26px;
+}
+
+.about__sign {
+  width: 64px;
+  height: 31px;
+  margin-left: 97px;
+  background-image: url("../img/sign-mobil.png");
+  background-repeat: no-repeat;
+}
+
+
+
+@media @tablet-width {
+  
+  .about {
+    width: 728px;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 33px;
+  }
+  
+  .about__items {
+    margin-bottom: -106px;
+    padding-top: 20px;
+  }
+    
+  .about__title {
+    width: 150px;
+    margin: 0;
+    .font(shortest; 28px; 18.15px);
+    text-align: left;
+    order: -2;
+  }
+  
+  .about__item {
+    width: 329px;
+    margin-left: -150px;
+    padding-top: 37px;
+    order: -1;
+  }
+  
+  .about__subtitle {
+    margin-bottom: 2px;
+    padding-left: 2px;
+    .font(shortest; 26px; 42.86px);
+    letter-spacing: 0.1px;
+  }
+  
+  .about__subsubtitle {
+    margin-bottom: 9px;
+    padding-left: 1px;
+    .font(shortest; 15px; 15.7px);
+    letter-spacing: 0.00086px;
+  }
+  
+  .about__description {
+    margin-bottom: 14px;
+    padding-left: 1px;
+    .font(shortest; 14px; 16.9px);
+  }
+    
+  .about__photo {
+    width: 311px;
+    height: 311px;
+    margin-top: -302px;
+    margin-left: 363px;
+    background-image: url("../img/avatar2-tablet.jpg");
+    background-position: 55.9% 36%;
+  }
+  
+  .about__list {
+    display: flex;
+    width: 220px;
+    margin: 0;
+    margin-bottom: 35px;
+    order: 1;
+  }
+  
+  .about__social-btn {
+    margin-right: 19px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .about__quote {
+    width: 375px;
+    margin: 0 auto;
+    margin-left: 150px;
+  }
+
+  .about__quote-before {
+    margin-bottom: -55px;
+    .font(shortest; 77px; 112.3px);
+  }
+
+  .about__quote-descr {
+    margin-bottom: 25px;
+    .font(shortest; 14px; 20.8px);
+    letter-spacing: 0.22px;
+  }
+
+  .about__sign {
+    width: 82px;
+    height: 40px;
+    margin-left: 146px;
+    background-image: url("../img/sign-tablet.png");
+  }
+}
+
+
+
+
+@media @desktop-width {
+  .about {
+    width: 1220px;
+    margin-bottom: 138px;
+    padding-top: 11px;
+    padding-left: 0;
+  }
+  
+  .about__items {
+    margin-bottom: -87px;
+  }
+  
+  .about__title {
+    width: 150px;
+    padding-left: 7px;
+    .font(shortest; 40px; 33px);
+  }
+  
+  .about__item {
+    width: 569px;
+    margin-left: -150px;
+    padding-top: 58px;
+    padding-left: 7px;
+    order: -1;
+  }
+  
+  .about__subtitle {
+    margin-bottom: -16px;
+    .font(shortest; 35px; 77.95px);
+  }
+  
+  .about__subsubtitle {
+    margin-bottom: 5px;
+    .font(shortest; 20px; 27px);
+  }
+  
+  .about__description {
+    margin-bottom: 15px;
+    .font(shortest; 18px; 24px);
+    &:last-child {
+      margin-bottom: -7px;
+    }
+  }
+    
+  .about__photo {
+    width: 509px;
+    height: 510px;
+    margin-top: -370px;
+    margin-left: 647px;
+    background-image: url("../img/avatar2-desktop.jpg");
+    background-position: 56% 32%;
+  }
+  
+  .about__list {
+    margin-top: -113px;
+    margin-left: 5px;
+    order: 1;
+  }
+  
+  .about__quote {
+    width: 675px;
+    margin-left: 281px;
+  }
+
+  .about__quote-before {
+    margin-bottom: 22px;
+    .font(shortest; 140px; 204.23px);
+  }
+
+  .about__quote-descr {
+    margin-bottom: 46px;
+    .font(shortest; 25px; 37.82px);
+    letter-spacing: 0.22px;
+  }
+
+  .about__sign {
+    width: 149px;
+    height: 73px;
+    margin-left: 263px;
+    background-image: url("../img/sign-desktop.png");
+  }
+}
