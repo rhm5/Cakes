@@ -1,7 +1,7 @@
 # Cakes
 
 * Сайт: [Cakes](https://rhm5.github.io/Cakes/)
-* Дизайн: [HTML Academy](https://htmlacademy.ru/)
+
 
 
 ## Описание
